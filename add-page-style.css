@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav{
+    width: 100%;
+    height: 8vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #fdcb6e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 10px 2px rgba(77, 77, 77, 0.671);
+    z-index: 10;
+}
+#logo-container{
+    height: 70%;
+    border-radius: 25px;
+    margin-left: 15px;
+    background-color: rgb(231, 231, 231);
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 2px rgba(78, 78, 78, 0.438)
+}
+#logo-container:hover{
+    cursor: pointer;
+    background-color: rgb(184, 184, 184)
+}
+#logo{
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+#main-nav{
+    display: flex;
+    list-style: none;
+    margin-right: 15px;
+}
+#main-nav > li{
+    display: inline-block;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+/*NAVBAR*/
+form {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: rgba(187, 168, 115, 0.616);
+    border-radius: 10px;
+}
+
+.container{
+    min-height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group label{
+    display: block;
+    font-size: 18px;
+}
+.form-group label:first-child{
+    margin-top: 20px;
+}
+
+.form-group input, textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    resize: none;
+}
+
+.bground{
+    padding-top: 5vh;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+    background-image: url('https://www.pixel4k.com/wp-content/uploads/2019/02/nissan-gtr-canada-4k_1550513104.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.uploaded_photos{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 5px;
+}
+.image{
+    width: 25%; 
+    height: 70px;
+    position: relative;
+}
+.image img{
+    /* width: 100%; */
+    height: 100%;
+}
+.delete{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 10%; */
+    /* height: 10%; */
+    z-index: 20;
+    border-radius: 50%;
+    background-color: rgb(216, 35, 35);
+    font-size: 7px;
+    padding: 3px;
+    color: #fff;
+    display: none;
+    transition: all .5s;
+}
+
+.image:hover .delete{
+    display: inline-block;
+    cursor: pointer;
+}
+.submit{
+    transition: all .5s;
+}
+.submit:hover {
+    cursor: pointer;
+    background-color: rgba(187, 168, 115, 0.616);
+}
+
+/*<form method="post" action="index.php" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="brand">brand: </label>
+            <input type="text" id="brand" name="brand"/>
+        </div>
+        <div class="form-group">
+            <label for="model" >model: </label>
+            <input type="text" id="model" name="model"/>
+        </div>
+        <div class="form-group">
+            <label for="year">year: </label>
+            <input type="text" id="year" name="year"/>
+        </div>
+        <div class="form-group">
+            <label for="location">location: </label>
+            <input type="text" id="location" name="location"/>
+        </div>
+        <div class="form-group">
+            <label for="price">price: </label>
+            <input type="text" id="price" name="price"/>
+        </div>
+        <div class="form-group">
+            <label for="fuel_type">fuel_type: </label>
+            <input type="text" id="fuel_type" name="fuel_type"/>
+        </div>
+        <div class="form-group">
+            <label for="image">image: </label>
+            <!-- <input type="file" id="image" name="photo"/> -->
+        </div>
+        <input type="file" value="image upload" name="photo"/>
+        <div class="form-group">
+            <label for="description">description: </label>
+            <textarea type="text" rows="5" id="description" name="description"></textarea>
+        </div>
+        <div class="form-group">
+            <input class="submit" type="submit" name="uploa"/>
+        </div>
+    </form>
